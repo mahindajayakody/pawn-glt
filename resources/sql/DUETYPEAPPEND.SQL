@@ -1,0 +1,3 @@
+
+
+ALTER TABLE `pawn`.`tblduetype` ADD COLUMN `ACCOUNTNO` VARCHAR(20) AFTER `COMID`;

@@ -1,0 +1,2 @@
+insert into pawn.tbldailyinterest (TKTID,INTRATE,INTAMOUNT,DATE,BRANCHID,COMID,ORIGINALID,LASTUPUSERID,LASTUPDATE,RECSTATUS) 
+select Ticketid,15,(pawnadv*(15/36500)*mindays),condate,branchid,comid,1,1,condate,1 from pawn_pmb.tblticket where stsid = 1 and mindays > 30

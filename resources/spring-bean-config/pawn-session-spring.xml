@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="mySessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+
+		<property name="dataSource" ref="dataSource"/>
+		
+		<property name="hibernateProperties" ref="hibernateProperties"/>
+			
+   		<property name="annotatedClasses">
+     		<list>
+     			<value>com.dass.pawning.domain.SystemProgram</value>
+     			<value>com.dass.pawning.domain.TicketStatus</value>
+     			<value>com.dass.pawning.domain.Location</value>
+     			<value>com.dass.pawning.domain.DueType</value>
+     			<value>com.dass.pawning.domain.PawnerType</value>
+     			<value>com.dass.pawning.domain.ClosureType</value>
+     			<value>com.dass.pawning.domain.Company</value>
+     			<value>com.dass.pawning.domain.Branch</value>
+     			<value>com.dass.pawning.domain.UserGroup</value>
+     			<value>com.dass.pawning.domain.CartageMarster</value>
+     			<value>com.dass.pawning.domain.ArticleModel</value>
+     			<value>com.dass.pawning.domain.AuctionLocation</value>
+     			<value>com.dass.pawning.domain.ProgramAccess</value>
+     			<value>com.dass.pawning.domain.Product</value>
+     			<value>com.dass.pawning.domain.Article</value>
+     			<value>com.dass.pawning.domain.Pawner</value>
+     			<value>com.dass.pawning.domain.Parameter</value>
+     			<value>com.dass.pawning.domain.ParameterValue</value>
+     			<value>com.dass.pawning.domain.GlAccount</value>
+     			<value>com.dass.pawning.domain.Ticket</value>
+     			<value>com.dass.pawning.domain.InterestRates</value>
+     			<value>com.dass.pawning.domain.Schemes</value>
+     			<value>com.dass.pawning.domain.Cartage</value>
+     			<value>com.dass.pawning.domain.TicketArticle</value>
+     			<value>com.dass.pawning.domain.DueFrom</value>
+     			<value>com.dass.pawning.domain.InterestSlab</value>
+     			<value>com.dass.pawning.domain.DueTo</value>
+     			<value>com.dass.core.bean.Serial</value>
+     			<value>com.dass.core.bean.SerialMaster</value>
+     			<value>com.dass.pawning.domain.FundRequest</value>
+     			<value>com.dass.pawning.domain.MapPawner</value>
+     			<value>com.dass.pawning.domain.Receipt</value>
+     			<value>com.dass.pawning.domain.Officer</value>
+     			<value>com.dass.pawning.domain.SystemDate</value>
+     			<value>com.dass.pawning.domain.DueReceipt</value>
+     			<value>com.dass.pawning.domain.TicketRedeem</value>
+     			<value>com.dass.pawning.domain.ReminderPara</value>
+     			<value>com.dass.pawning.domain.Reminder</value>
+     			<value>com.dass.pawning.domain.AuctionMaster</value>
+     			<value>com.dass.pawning.domain.FundDeposit</value>
+     			<value>com.dass.pawning.domain.Ledger</value>
+     			<value>com.dass.core.bean.UserLog</value>
+     			<value>com.dass.core.bean.EventLog</value>
+     			<value>com.dass.pawning.domain.DailyInterst</value>     			
+     			<value>com.dass.pawning.domain.AuctionExpences</value>
+     			<value>com.dass.pawning.domain.AuctionTicket</value>
+     			<value>com.dass.core.bean.AccessBranch</value>
+     			<value>com.dass.pawning.domain.CancelDueReceipt</value>
+     			<value>com.dass.pawning.domain.OverPayment</value>
+     		</list>
+		</property>		
+	</bean>	
+</beans>
